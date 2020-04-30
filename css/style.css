@@ -1,0 +1,392 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+
+button, input { line-height: normal; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+
+button[disabled], input[disabled] { cursor: default; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+/* ==|== primary styles =====================================================
+   Author: Josh Hubi
+   ========================================================================== */
+
+* {margin:0; padding:0;line-height:normal;outline: none;}
+
+input, textarea, select {background:none; border:none;}
+textarea:focus, input:focus {outline: none;}
+
+@font-face { /* first for IE 6/7/8 */  font-family: 'DINWeb'; src: url('../fonts/DINWeb.eot'); }  
+@font-face {font-family: 'DINWeb';font-style: normal;font-weight: normal;src: url('../fonts/DINWeb.eot'),url('../fonts/DINWeb.woff') format('woff'),url('../fonts/DINWeb.ttf') format('truetype');}
+@font-face { /* first for IE 6/7/8 */  font-family: 'DINWebMedium'; src: url('../fonts/DINWeb-Medium.eot'); }  
+@font-face {font-family: 'DINWebMedium';font-style: normal;font-weight: normal;src: url('../fonts/DINWeb-Medium.eot'),url('../fonts/DINWeb-Medium.woff') format('woff'),url('../fonts/DINWeb-Medium.ttf') format('truetype');}
+@font-face { /* first for IE 6/7/8 */  font-family: 'DINWebBold'; src: url('../fonts/DINWeb-Bold.eot'); }  
+@font-face {font-family: 'DINWebBold';font-style: normal;font-weight: normal;src: url('../fonts/DINWeb-Bold.eot'),url('../fonts/DINWeb-Bold.woff') format('woff'),url('../fonts/DINWeb-Bold.ttf') format('truetype');}
+@font-face { /* first for IE 6/7/8 */  font-family: 'DINWebLight'; src: url('../fonts/DINWeb-Light.eot'); }  
+@font-face {font-family: 'DINWebLight';font-style: normal;font-weight: normal;src: url('../fonts/DINWeb-Light.eot'),url('../fonts/DINWeb-Light.woff') format('woff'),url('../fonts/DINWeb-Light.ttf') format('truetype');}
+@font-face { /* first for IE 6/7/8 */  font-family: 'DINWebLightIta'; src: url('../fonts/DINWeb-LightIta.eot'); }  
+@font-face {font-family: 'DINWebLightIta';font-style: normal;font-weight: normal;src: url('../fonts/DINWeb-LightIta.eot'),url('../fonts/DINWeb-LightIta.woff') format('woff'),url('../fonts/DINWeb-LightIta.ttf') format('truetype');}
+@font-face { /* first for IE 6/7/8 */  font-family: 'DINWebMediumIta'; src: url('../fonts/DINWeb-MediumIta.eot'); }  
+@font-face {font-family: 'DINWebMediumIta';font-style: normal;font-weight: normal;src: url('../fonts/DINWeb-MediumIta.eot'),url('../fonts/DINWeb-MediumIta.woff') format('woff'),url('../fonts/DINWeb-MediumIta.ttf') format('truetype');}
+@font-face { /* first for IE 6/7/8 */  font-family: 'DINWebBoldIta'; src: url('../fonts/DINWeb-BoldIta.eot'); }  
+@font-face {font-family: 'DINWebBoldIta';font-style: normal;font-weight: normal;src: url('../fonts/DINWeb-BoldIta.eot'),url('../fonts/DINWeb-BoldIta.woff') format('woff'),url('../fonts/DINWeb-BoldIta.ttf') format('truetype');}
+
+body {font-family:DINWeb;background:#fff url(../img/bg.png) top repeat-x;font-smooth:always;}
+
+.top {height:532px; width:100%; border-top:#000 solid 7px; position:absolute; top:0;z-index:-1;overflow:hidden;}
+.headerHelper {height:380px; width:100%; background:#f9db0a url(../img/header-bg.jpg) top repeat-x;}
+.backgroundHelper {width:1023px; margin-left:auto; margin-right:auto; position:relative;z-index:3;}
+.backgroundHelper .left {position:absolute; left:-200px; top:-2px;z-index:3}
+.backgroundHelper .right {position:absolute; right:-200px; top:-2px;z-index:3}
+
+.wrapper {width:1023px; margin:auto; padding-top:7px; z-index:1; } 
+
+.header {position:relative; width:952px; height:194px; margin:auto;}
+.header .logo {width:200px; height:75px; background:url(../img/logo.png) top left no-repeat;position:absolute; top:16px; left:0;}
+.header .logo a {display:block; width:100%; height:100%; text-indent:-999999px; font-size:1px; color:#f9db0a;}
+.header .search {position:absolute; right:0; top:8px; width:172px; height:25px; background:url(../img/search.png) top left no-repeat;}
+.header .search .textInput {width:130px; height:12px; border:none;padding-left:5px; font-family:DINWeb; font-size:12px; position:absolute; left:0; padding-top:7px;}
+.header .search .searchNormal {position:absolute; right:0; top:0; width:30px; height:25px; display:block; font-size:1px; text-indent:-9999px; overflow:hidden;}
+.header .topMenu {position:absolute; right:192px; top:0; text-transform:uppercase; list-style:none;margin:0; font-smooth:never;}
+.header .topMenu li {float:left;padding-top:0; padding-right:5px; line-height:40px;}
+.header .topMenu a {font-size:11px; color:#000; text-decoration:none; letter-spacing:1px;}
+.header .topMenu a:hover {color:#666666;}
+.header .mainMenu {position:absolute; bottom:34px; left:86px; list-style:none; margin:0; padding:0;}
+.header .mainMenu li {float:left; height:44px;}
+.header .mainMenu a {height:44px; padding-left:24px; padding-right:24px; line-height:47px;color:#fff; font-family:DINWebMedium; font-size:24px; text-transform:uppercase; text-decoration:none; font-weight:normal; display:block; letter-spacing:0.5px}
+.header .mainMenu a:hover, .header .mainMenu .selected {background:#000;}
+
+.header .mainMenu .sub {background:#000000; width:100%; height:34px; position:absolute; bottom:-34px; visibility:hidden;}
+.header .mainMenu .center {float:left; width:100%;overflow:hidden;position:relative;}
+.header .mainMenu .sublinks {list-style:none;clear:left;float:left;list-style:none;margin:0; padding:0;position:relative;left:50%;text-align:center;}
+.header .mainMenu .sublinks li {display:block;float:left;list-style:none;margin:0;padding:0;position:relative;right:50%;line-height:37px;color:#efefef;}
+.header .mainMenu .sub a {background:none; width:auto; height:auto; color:#efefef; font-size:16px; font-family:DINWebLightIta; line-height:37px;}
+.header .mainMenu .sub a:hover {color:#999;}
+
+.contentWrapper {width:100%; background:#FFF; border-left:#f4f1f1 solid 1px;border-right:#f4f1f1 solid 1px;}
+.contentHelper {width:951px; margin:auto;padding-top:35px;}
+
+.slider {width:100%; height:300px; position:relative; margin-bottom:28px;}
+.slider .video {width:521px; height:293px; position:absolute; top:0; left:6px;}
+.slider .box {width:385px; position:absolute; top:0; right:7px; padding-top:10px}
+.slider .box h1 {font-family:DINWebBoldIta;font-weight:normal; font-size:29px; line-height:29px;letter-spacing:0.5px; margin-bottom:15px;}
+.slider .box p {text-align:justify; font-size:14px; line-height:20px;}
+.slider .more {width:137px; height:55px; position:absolute; bottom:0; right:7px;}
+.slider .more a {display:block; width:100%; height:100%; background:#000; color:#fff; text-decoration:none; text-align:center; font-family:DINWebBoldIta; font-size:20px; line-height:55px; letter-spacing:0.5px}
+.slider .more a:hover {background:#f6d20a;}
+
+.sliderSelector {width:951px; height:20px; background:url(../img/slider-shadow.png) top center no-repeat; list-style:none; padding:0; margin:0;}
+.sliderSelector .center {margin:auto; width:137px;}
+.sliderSelector li {float:left; position:relative; width:11px; height:11px; margin-left:19px; top:-6px;z-index:2;}
+.sliderSelector a {display:block; position:absolute; width:11px; height:11px; background:url(../img/dot.png) top center no-repeat; font-size:1px; overflow:hidden; text-indent:-99999px;left:0px;}
+.sliderSelector a:hover, .sliderSelector .selected {width:21px; height:21px; background:url(../img/dot-selected.png) top center no-repeat; top:-5px; left:-5px;}
+
+.block {width:100%; background:url(../img/block-shadow.png) bottom center no-repeat;padding-bottom:10px; position:relative;}
+.block .heading {width:100%; height:28px; background:#000000; position:relative;}
+.block .heading .left {position:absolute; left:9px; height:100%; width:45%;font-family:DINWebBoldIta;font-size:17px; color:#fff; font-weight:normal;letter-spacing:0.5px; line-height:32px;}
+.block .heading .right {position:absolute; right:9px; height:100%; width:45%;font-family:DINWebBoldIta; font-size:17px;color:#fff;font-weight:lighter; letter-spacing:0.5px; line-height:32px; text-align:right;}
+
+.logos {height:110px;}
+.logos img {display:block; margin: auto;}
+.logos .logos-left,.block .logos-right {padding-left:10px; padding-top:10px; padding-right:0px;}
+.logos .logos-left {width:463px; border-right:#cecece solid 1px; position:absolute; left:0;}
+.logos .logos-right {width:463px; position:absolute; right:0;}
+
+.trio {list-style:none; margin:0;padding:0;padding-left:6px;padding-top:20px; height:355px;}
+.trio .last {margin-right:0 !important;}
+.trio .trust {background:url(../img/block1.png) top left no-repeat;}
+.trio .pubs {background:url(../img/block2.png) top left no-repeat;}
+.trio .tech {background:url(../img/block3.png) top left no-repeat;}
+.trio li {float:left; width:300px; height:274px; margin-right:21px; position:relative;}
+.trio h1 {position:absolute; top:0; width:100%; text-align:center; font-weight:normal; color:#fff; font-family:DINWebBoldIta; font-size:50px; text-transform:uppercase; letter-spacing:1.5px; line-height:80px;}
+.trio a {display:block; position:absolute; bottom:0; width:100%; height:67px; background:#000; font-family:DINWebLightIta; font-size:14px; text-decoration:none; color:#fff;}
+.trio p {padding:17px;line-height:16px;}
+
+.buttons {width:100%; height: 102px; position: relative; margin-bottom:35px;}
+.buttons .social .shadow, .buttons .newsletter .shadow  {background:url(../img/box-shadow.png); width:306px; height: 28px; position: absolute; bottom:-29px; left:10px;}
+.buttons .social {width:368px; height: 71px; border:#F0F0F0 solid 1px; position: absolute; left:-64px; top:0; background: #fff;}
+.buttons .social ul {list-style:none;clear:left;float:left;list-style:none;margin:0; padding:0;position:relative;left:50%;text-align:center;margin-left:5px;}
+.buttons .social li {float:left; width:40px; height: 29px; display:block;float:left;list-style:none;margin:0;padding:0;position:relative;right:50%;padding-top:21px;}
+.buttons .social a {width:28px; height: 29px; display: block; font-size: 1px; text-indent: -99999px;}
+.buttons .social .fb {background:url(../img/facebook.jpg);}
+.buttons .social .twitter {background:url(../img/twitter.jpg);}
+.buttons .social .headline {position: absolute; top:-24px; width: 100%; text-align: center;font-family:DINWebBoldIta; font-size: 20px;}
+
+.buttons .contact {width:300px; height:71px; position: absolute; top:0; left:325px; background:#f6d20a;}
+.buttons .contact:hover {background:#000}
+.buttons .contact a {font-size: 20px; text-align: center; color:#000; text-transform: uppercase; font-family: DINWebLightIta; font-weight: 600; text-decoration: none;line-height: 76px; display: block; width:100%; height: 100%;}
+.buttons .contact a:hover {color:#fff}
+.buttons .newsletter {width:368px; height: 71px; border:#F0F0F0 solid 1px; position: absolute; right:-64px; top:0; background: #fff;}
+
+.buttons .newsletter .headline {position: absolute; top:-24px; width:333px; text-align: center;font-family:DINWebBoldIta; font-size: 20px;}
+.buttons .newsletter input, textarea { border: solid 1px #DCDCDC; width:197px; height: 49px; font-family: DINWebLightIta;  font-size:16px; text-align: center; color:#9f9f9f; outline: 0;  margin-top:10px; background: #ededed; box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px}     
+.buttons .newsletter .email {position: absolute; left:15px;}
+.buttons .newsletter input:hover, .footer .newsletter textarea:hover,  
+.buttons .newsletter input:focus, .footer .newsletter textarea:focus {border-color: #C9C9C9;}  
+.buttons .newsletter .submit input {width: 79px; height:49px; background:#000; font-size:16px; border: solid 1px #DCDCDC; text-align: center; color: #FFFFFF;text-transform:uppercase; font-family:DINWebBoldIta; position: absolute; right:60px; top:0;}  
+
+.footer {background:#000000; width:100%; height:207px;}
+.footer .holder {width:1023px; margin:auto; position:relative;}
+.footer .hotfix {width:1023px; height:207px; background:#000000; position:absolute; top:0; left:0; z-index:-1;}
+.footer .columns {position:absolute; left:11px; top:18px;}
+.footer .links {margin:0; padding:0; width:167px; float:left; list-style:none;}
+.footer .links li {font-family:DINWebBold; font-size:14px; color:#FFFFFF; text-transform:uppercase; letter-spacing:0.5px;line-height:20px !important;} 
+.footer .links a {font-family:DINWebLight !important; text-transform:none !important; font-size:12px; text-decoration:none; color:#fff; font-weight:normal;}
+.footer .links a:hover {color:#999;}
+.footer .copyright {position:absolute; right:11px;top:23px; font-family:DINWebBoldIta; font-size:12px; color:#FFFFFF; font-weight:normal; letter-spacing:0.5px; text-align:right;}
+.footer .copyright ul {margin:0; padding:0; list-style:none;}
+.footer .copyright li {font-family:DINWebLightIta !important; float:right;line-height:20px !important;color:#fff;padding-left:5px;}
+.footer .copyright a {color:#fff; text-decoration:none;}
+.footer .copyright a:hover {color:#999;}
+
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
